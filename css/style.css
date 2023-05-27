@@ -1,0 +1,271 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+    background-image: url("../img/pattern.jpg");
+    font-family: "Candara", "Courier New", monospace;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a{
+    color: black;
+    text-decoration: none;
+    justify-content: right;
+    
+}
+.profile{
+    border-radius: 50%;
+}
+
+.box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 8%;
+    margin-bottom: 2px;
+    padding: 2%;
+    border-radius: 30px;
+    grid-template-columns: auto auto;
+    transition: all;
+    transition-duration: 2s;
+    margin-top: 700px;
+    opacity: 0;
+}
+.box.active{
+margin-top: 100px;
+opacity:100%;
+}
+.box:hover{
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.3);
+}
+.box2{
+    
+    align-items: center;
+   justify-content: center;
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 8%;
+    margin-bottom: 2px;
+    padding-left: 40px;
+    border-radius: 30px;
+    transition: all;
+    transition-duration: 1s;
+
+}
+.description{
+    grid-column: 1 / span 1;
+    padding-right: 80px;
+    line-height: 2
+}
+
+.mainTitle{
+padding: 0;;
+font-size: 25px;    
+
+}
+header{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding:  10px 10px;
+padding-left: 20px;
+padding-right: 20px;
+
+
+position: fixed;
+width: 100%;
+
+margin-right: 10px;
+transition: all 0.5s ease-in;
+
+}
+.header-scroll{
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+.mainLink{
+    display: flex;
+    column-gap: 15px;
+   margin-right: 50px;
+}
+h1{
+    text-align: center;
+}
+.titleBox{
+    display:grid;
+    grid-template-columns: auto auto;
+border: 2px solid black;
+border-top: none;
+border-left: none;
+border-right: none;
+padding-bottom: 1%;
+}
+a:hover{
+text-decoration: underline;
+}
+.intro{
+    display:grid;
+    grid-template-columns: auto auto;
+    padding-top: 100px;
+    color: white;
+   justify-content: center;
+    font-size: 30px;
+}
+.welcomeTo{
+    width: 0;
+    text-align:left;
+    justify-content: left;
+    margin-top: 100px;
+   opacity: 0%;
+    transition: all 1.0s ease-in;
+
+    
+}
+.welcomeTo.active{
+    text-align: left;
+   color:white;
+   text-align: center;
+   width: 100%;
+   opacity: 100%;
+  
+}
+.box2 .container{
+    display: grid;
+   
+    grid-template-columns: auto auto;
+    background-color: white;
+    border-radius: 30px;
+
+}
+ .box2 .container .image{
+
+   grid-template-columns: auto auto auto;
+    
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+img{
+    border-radius: 30px;
+}
+.line{
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-top: solid 1px black;
+    grid-column: 1 / span 2;
+}
+.items{
+    font-size: 20px;
+}
+.project1{
+    margin-top: 500px;
+    visibility: hidden;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 200px;
+    transition: all 1.0s ease-in;
+    opacity: 0;
+}
+.project1.active{
+    margin-top: 100px;
+    visibility: visible;
+    opacity: 1.0;
+}
+.project2{
+    margin-top: 500px;
+    visibility: hidden;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 200px;
+    transition: all 1.0s ease-in;
+    opacity: 0;
+}
+.project2.active{
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1.0;
+}
+.project3{
+    margin-top: 500px;
+    visibility: hidden;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 200px;
+    transition: all 1.0s ease-in;
+    opacity: 0;
+}
+.project3.active{
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1.0;
+}
+
+ .img1{
+        display: block;
+      
+      
+      width: 700px;
+      height: 400px;
+      
+    }
+    .myPortfolio{
+        color: transparent;
+        margin-bottom: 500px;
+        transition: all 1.0s ease-in;
+       
+        
+    }
+    .myPortfolio.active{
+        color: white;
+    }
+section{
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+.myHeader1{
+    margin-top: 400px;
+    font-size: 80px;
+    color:white;
+    transition: all 1s ease-in;
+    opacity: 0%;
+}
+.myHeader1.active{
+ margin-top: 0px;
+ opacity: 100%;
+}
+.line1{
+    border-top: solid 1px white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.social{
+    justify-content: space-between;
+}
+.myHeader2{
+    margin-top: 0px;
+    font-size: 80px;
+    color:white;
+    transition: all 1s ease-in;
+    
+}
+.line2{
+    border-top: solid 1px white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
