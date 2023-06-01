@@ -1,27 +1,17 @@
 const headerEL =  document.querySelector('header');
 window.addEventListener('scroll', () =>
 {
-    if(window.scrollY > 900)
+    if(window.scrollY > 600)
     {
         headerEL.classList.add('header-scroll');
     }
-    else if(window.scrollY <= 900)
+    else if(window.scrollY <= 800)
     {
         headerEL.classList.remove('header-scroll');
     }
 })
-const introEL = document.querySelector('.welcomeTo');
-window.addEventListener('scroll', () =>
-{
-    if(window.scrollY >= 0)
-    {
-        introEL.classList.add('active');
-    }
-    else if(window.scrollY <= 200)
-    {
-        introEL.classList.remove('active');
-    }
-})
+
+
 
 
 const proj1EL = document.querySelector('.project1');
@@ -64,11 +54,11 @@ window.addEventListener('scroll', () =>
 const head1EL = document.querySelector('.myHeader1');
 window.addEventListener('scroll', () =>
 {
-    if(window.scrollY > 600)
+    if(window.scrollY > 400)
     {
         head1EL.classList.add('active');
     }
-    else if(window.scrollY <= 800)
+    else if(window.scrollY <= 900)
     {
         head1EL.classList.remove('active');
     }
@@ -81,7 +71,7 @@ window.addEventListener('scroll', () =>
     {
         line1EL.classList.add('active');
     }
-    else if(window.scrollY <= 900)
+    else if(window.scrollY <= 800)
     {
         line1EL.classList.remove('active');
     }
