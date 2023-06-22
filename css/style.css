@@ -6,6 +6,8 @@ body{
   margin: 0;
   padding: 0;
     background-color: rgb(255, 217, 159);
+   
+    
     font-family: "Candara", "Courier New", monospace;
     background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17,39 +19,48 @@ a{
     justify-content: right;
     
 }
+.resumeLink{
+    width: 100px;
+    text-decoration: none;
+}
+.arrow{
+   grid-column:  1 / span 2;
+   
+
+}
 .profile{
     padding: 50px;
     margin-left: 20px;
     border-radius: 50%;
+    
      
    
     /* transition: all 1.0s ease-in; */
 }
-.profile.active{
-    rotate: 0deg;
+.profile2{
+    padding: 50px;
+    margin-left: 20px;
+    border-radius: 30%;
+    width: 300px;
+    height: 400px;
+
+    
+     
    
-   
+    /* transition: all 1.0s ease-in; */
 }
+
 span{
 
-    animation: color-change 1.0s ease-in;
-}
-@keyframes color-change{
-    0%{
-       
-        
-    }
-    100%{
-        color:rgb(7, 32, 116);
-
-    }
+    color:rgb(7, 32, 116);
+   
 }
 
 .box{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color:rgb(30, 30, 30);
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 8%;
@@ -61,6 +72,7 @@ span{
     transition-duration: 2s;
     margin-top: 700px;
     opacity: 0;
+    color: white;
 }
 
 .box.active{
@@ -74,21 +86,28 @@ opacity:100%;
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color:rgb(63, 63, 63);
+    background-color:rgb(30, 30, 30);
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 100px;
+    margin-top: 500px;
     margin-bottom: 2px;
     padding: 2%;
     border-radius: 30px;
     grid-template-columns: auto auto;
    color:white;
+   opacity: 0;
+   transition: all 1s ease-in;
+   
+}
+.meetingYou.active{
+    margin-top: 100px;
+    opacity: 100%;
 }
 .hello{
     text-align: left;
-    font-size: 30px;
+    font-size: 50px;
     height:8px;
-    color: rgb(255, 217, 159);
+    color: #ffd99f;
 
 }
 .box2{
@@ -96,7 +115,7 @@ opacity:100%;
     align-items: center;
    justify-content: center;
    display: block;
-    background-color: white;
+   background-color:rgb(30, 30, 30);;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 8%;
@@ -105,18 +124,30 @@ opacity:100%;
     border-radius: 30px;
     transition: all;
     transition-duration: 1s;
-    height: 75%;
+    
+    color: white;
 
 }
 .description{
     grid-column: 1 / span 1;
     padding-right: 80px;
-    line-height: 2
-}
+    line-height: 2;
+    font-size: 23px;
 
+}
+.descriptionMeeting{
+    grid-column: 1 / span 1;
+    padding-right: 80px;
+    line-height: 2;
+    font-size: 23px;
+}
+h2{
+    color: rgb(255, 217, 159);
+}
 .mainTitle{
 padding: 0;;
 font-size: 25px;    
+cursor: pointer;
 
 }
 header{
@@ -124,11 +155,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-padding:  10px 10px;
+padding:  10px 20px;
 padding-left: 20px;
 padding-right: 20px;
 color:black;
-
+z-index: 9999;
 
 position: fixed;
 width: 100%;
@@ -147,7 +178,7 @@ ul{
 }
 .mainLink{
     display: flex;
-    column-gap: 15px;
+    column-gap: 30px;
    margin-right: 50px;
 
 }
@@ -183,39 +214,45 @@ a:hover::after{
 
 .intro{
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     padding-top: 100px;
     color: rgb(29, 29, 29);
-   justify-content: center;
+    justify-content: center;
     font-size: 20px;
+    padding-bottom: 400px;
+    margin-top: 0px;
+   
 }
 
+
 .welcomeTo{
+    font-size: 40px;
     width: 100%;
     text-align:left;
     justify-content: left;
     margin-top: 100px;
-    border-right: 2px solid rgb(29, 29, 29);;
     margin-right: 30px;
     height: 200px;
     padding-top: 20px;
-    /* transition: all 1.0s ease-in; */
     animation: on-load 1.0s ease-in;
+    
+    /* transition: all 1.0s ease-in; */
     
     
 }
 @keyframes on-load{
     0%{
-        margin-right: 300px;
+       
        opacity: 0%;
+       padding-left: 300px;
     }
     50%{
        
         opacity: 50%;
     }
     100%{
-       margin-right: 30px;
-      opacity: 100%;
+       
+     padding-left: 0px;
     }
 }
 .welcomeTo.active{
@@ -227,11 +264,17 @@ a:hover::after{
   
 }
 
+.gap{
+    width: 1px;
+    height:auto;
+    border-left: 3px solid black;
+}
 .box2 .container{
     display: grid;
    
     grid-template-columns: auto auto;
-    background-color: white;
+    background-color:rgb(30, 30, 30);
+    color: white;
     border-radius: 30px;
 
 }
@@ -264,35 +307,35 @@ img{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
-    border-top: solid 1px black;
+    border-top: solid 1px rgb(255, 217, 159);
     grid-column: 1 / span 2;
 }
 .items{
     font-size: 20px;
 }
 .project1{
-    margin-top: 500px;
+    margin-top: 700px;
     visibility: hidden;
     margin-left: 40px;
     display: grid;
 
     grid-template-columns: auto auto;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     transition: all 1.0s ease-in;
    
 }
 .project1.active{
-    margin-top: 100px;
+    margin-top: 50px;
     visibility: visible;
     opacity: 1.0;
 }
 .project2{
-    margin-top: 500px;
+    margin-top: 700px;
     visibility: hidden;
     margin-left: 40px;
     display: grid;
     grid-template-columns: auto auto;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
     transition: all 1.0s ease-in;
     opacity: 0;
 }
@@ -302,7 +345,7 @@ img{
     opacity: 1.0;
 }
 .project3{
-    margin-top: 500px;
+    margin-top: 700px;
     visibility: hidden;
     margin-left: 40px;
     display: grid;
@@ -336,13 +379,14 @@ img{
         color: white;
     }
 section{
-    margin-top: 400px;
-    margin-bottom: 400px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     
 }
 .backgroundImage{
     background-color: rgb(63, 63, 63);
-    background-image: linear-gradient(rgb(63,63,63),rgb(22, 47, 89));
+    background-image: linear-gradient(#3f3f3f,#162f59);
+    border-top: 7px solid black;
 }
 .myHeader1{
     padding-top: 100px;
@@ -350,6 +394,23 @@ section{
     color: rgb(255, 217, 159);
     transition: all 1s ease-in;
     opacity: 0%;
+}
+.resumeImg{
+    display: block;
+    margin-top: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 30px;
+    width:1200px;
+    height: auto;
+    opacity: 0;
+    transition: all 2.0s ease-in;
+
+}
+.resumeImg.active{
+opacity: 100%;
+margin-top: 100px;
 }
 .myHeader1.active{
  margin-top: 0px;
@@ -399,43 +460,63 @@ button{
     margin-left: 20%;
     margin-right: 20%;
 }
+.myHeader3{
+    margin-top: 0px;
+    font-size: 80px;
+    color: rgb(255, 217, 159);
+    transition: all 1s ease-in;
+    
+}
+.line3{
+    border-top: solid 1px white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 .imgContainer{
 
-    grid-template-columns: auto auto;
+    display: grid;
     width: 600px;
     height: 600px;
-    display: grid;
     align-items: center;
     justify-content: center;
 }
 .imgList{
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: auto auto;
+   grid-column: 1 / span 1;
     
 }
 .imgItem{
     
    
     width:200px;
-    height:100px;
+    height:auto;
     margin:10px;
    transition: all 0.5s;
    background-size: cover;
    background-position: center;
 }
 .imgItem:hover{
-height:300px;
+height:auto;
 width:500px;
 cursor: pointer;
 }
 footer{
-    text-align: center;
-    background-color: white;
+   align-items: center;
+   text-align: center;
+    justify-content: center;
+    color: rgb(255, 217, 159);
+    background-color:rgb(29, 29, 29);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 8%;
-    margin-right: 8%;
-    border-radius: 30px;
-    margin-bottom: 8%;
+   margin-left: 8%;
+   border-radius: 30px;
+   margin-right: 8%;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+   
+}
+.tan{
+    color:#ffd99f;
 }
