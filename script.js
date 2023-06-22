@@ -11,6 +11,14 @@ window.addEventListener('scroll', () =>
     }
 })
 
+const meetingEL =  document.querySelector('.meetingYou');
+window.addEventListener('scroll', () =>
+{
+    if(window.scrollY > 700)
+    {
+        meetingEL.classList.add('active');
+    }
+    })
 
 
 
@@ -76,15 +84,26 @@ window.addEventListener('scroll', () =>
         line1EL.classList.remove('active');
     }
 })
-
-const aboutEL = document.querySelector('.box');
+const resumeEL = document.querySelector('.resumeImg');
 window.addEventListener('scroll', () =>
 {
     if(window.scrollY > 3200)
     {
-        aboutEL.classList.add('active');
+        resumeEL.classList.add('active');
     }
     else if(window.scrollY <= 3500)
+    {
+        resumeEL.classList.remove('active');
+    }
+})
+const aboutEL = document.querySelector('.box');
+window.addEventListener('scroll', () =>
+{
+    if(window.scrollY > 3500)
+    {
+        aboutEL.classList.add('active');
+    }
+    else if(window.scrollY <= 3800)
     {
         aboutEL.classList.remove('active');
     }
