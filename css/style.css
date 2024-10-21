@@ -5,7 +5,7 @@ html{
 body{
   margin: 0;
   padding: 0;
-    background-color: rgb(255, 217, 159);
+    background-color: #2d2d2d;
    
     
     font-family: "Candara", "Courier New", monospace;
@@ -14,10 +14,18 @@ body{
   background-size: cover
 }
 a{
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2d2d2d;
     text-decoration: none;
     justify-content: right;
     
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 .resumeLink{
     width: 100px;
@@ -31,7 +39,7 @@ a{
 .profile{
     padding: 50px;
     margin-left: 20px;
-    border-radius: 50%;
+    
     
      
    
@@ -40,7 +48,7 @@ a{
 .profile2{
     padding: 50px;
     margin-left: 20px;
-    border-radius: 30%;
+    
     width: 300px;
     height: 400px;
 
@@ -60,39 +68,35 @@ span{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color:rgb(30, 30, 30);
+    background-color:#2d2d2d;
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 8%;
+   
     margin-bottom: 2px;
-    padding: 2%;
-    border-radius: 30px;
+    
+   
     grid-template-columns: auto auto;
-    transition: all;
-    transition-duration: 2s;
-    margin-top: 700px;
-    opacity: 0;
+    margin-top: 100px;
+   
     color: white;
 }
 
-.box.active{
-margin-top: 100px;
-opacity:100%;
-}
-.box:hover{
-    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.3);
+
+.contactTitle{
+    color: white;
+
 }
 .meetingYou {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color:rgb(30, 30, 30);
+    background-color:#2d2d2d;
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 500px;
+    margin-top: 400px;
     margin-bottom: 2px;
     padding: 2%;
-    border-radius: 30px;
+    border-radius: 20px;
     grid-template-columns: auto auto;
    color:white;
    opacity: 0;
@@ -105,9 +109,11 @@ opacity:100%;
 }
 .hello{
     text-align: left;
-    font-size: 50px;
+    font-size: 80px;
     height:8px;
-    color: #ffd99f;
+    padding-bottom: 30px;
+    color:#ff3535;
+    margin-bottom: 50px;
 
 }
 .box2{
@@ -115,39 +121,57 @@ opacity:100%;
     align-items: center;
    justify-content: center;
    display: block;
-   background-color:rgb(30, 30, 30);;
+   
     margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 8%;
+    margin-right: 2%;
+    margin-top: 2%;
     margin-bottom: 2px;
-    padding-left: 40px;
-    border-radius: 30px;
-    transition: all;
-    transition-duration: 1s;
-    
-    color: white;
+    padding-left: 20px;
+   
+   
+    border-radius: 20px;
+    color:#2d2d2d;
+    /*box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);*/
+
 
 }
 .description{
     grid-column: 1 / span 1;
+    padding-right: 60px;
+    line-height: 2;
+    font-size: 20px;
+    color: black;
+
+}
+.contactdescription{
+   
     padding-right: 80px;
     line-height: 2;
     font-size: 23px;
-
+    color: white;
+    padding-bottom: 30px;
 }
 .descriptionMeeting{
     grid-column: 1 / span 1;
     padding-right: 80px;
     line-height: 2;
     font-size: 23px;
+    background-color:#2d2d2d;
+    color: white;
 }
 h2{
-    color: rgb(255, 217, 159);
+    font-family: Arial, Helvetica, sans-serif;
+   color:#2d2d2d;
+   font-size: 40px;
+}
+.conTitle{
+    color: white;
 }
 .mainTitle{
 padding: 0;;
 font-size: 25px;    
 cursor: pointer;
+color:#2d2d2d;
 
 }
 header{
@@ -164,12 +188,12 @@ z-index: 9999;
 position: fixed;
 width: 100%;
 
-margin-right: 10px;
+
 transition: all 0.2s ease-in;
 
 }
 .header-scroll{
-    background-color: rgb(255, 217, 159);
+    background-color: #f6c188;
     color:black;
 }
 
@@ -182,8 +206,20 @@ ul{
    margin-right: 50px;
 
 }
-h1{
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+   padding-top: 3%;
+    margin-top: 300px;
     text-align: center;
+   font-size: 100px;
+ color: rgb(44, 44, 44);
+border-bottom: #2d2d2d;
+border: 1px;
+border-bottom: 5px solid;
+
+margin-right: 5%;
+margin-left: 5%;
+  
 }
 .titleBox{
     display:grid;
@@ -216,11 +252,12 @@ a:hover::after{
     display:grid;
     grid-template-columns: auto auto auto;
     padding-top: 100px;
-    color: rgb(29, 29, 29);
+    color:rgb(0, 0, 0);
     justify-content: center;
     font-size: 20px;
-    padding-bottom: 400px;
+    padding-bottom: 220px;
     margin-top: 0px;
+    background-color: #f6c188;
    
 }
 
@@ -235,6 +272,7 @@ a:hover::after{
     height: 200px;
     padding-top: 20px;
     animation: on-load 1.0s ease-in;
+    color: #890202;
     
     /* transition: all 1.0s ease-in; */
     
@@ -267,13 +305,13 @@ a:hover::after{
 .gap{
     width: 1px;
     height:auto;
-    border-left: 3px solid black;
+    border-left: 5px solid black;
 }
 .box2 .container{
     display: grid;
    
     grid-template-columns: auto auto;
-    background-color:rgb(30, 30, 30);
+    background-color:rgb(22, 22, 22);
     color: white;
     border-radius: 30px;
 
@@ -289,8 +327,8 @@ a:hover::after{
 }
 img{
     display: block;
-    border-radius: 30px;
-    animation:img-load 1.0s ease-in;
+   
+    
 }
 @keyframes img-load{
     0%{
@@ -314,51 +352,39 @@ img{
     font-size: 20px;
 }
 .project1{
-    margin-top: 700px;
-    visibility: hidden;
+    margin-top: 100px;
+   
     margin-left: 40px;
     display: grid;
 
     grid-template-columns: auto auto;
     margin-bottom: 10px;
-    transition: all 1.0s ease-in;
+    /*transition: all 1.0s ease-in;*/
    
 }
-.project1.active{
-    margin-top: 50px;
-    visibility: visible;
-    opacity: 1.0;
-}
+
 .project2{
-    margin-top: 700px;
-    visibility: hidden;
+    margin-top: 200px;
+   
     margin-left: 40px;
     display: grid;
     grid-template-columns: auto auto;
     margin-bottom: 10px;
-    transition: all 1.0s ease-in;
-    opacity: 0;
+   
+    
 }
-.project2.active{
-    margin-top: 0px;
-    visibility: visible;
-    opacity: 1.0;
-}
+
 .project3{
-    margin-top: 700px;
-    visibility: hidden;
+    margin-top: 200px;
+  
     margin-left: 40px;
     display: grid;
     grid-template-columns: auto auto;
     margin-bottom: 200px;
-    transition: all 1.0s ease-in;
-    opacity: 0;
+    
+ 
 }
-.project3.active{
-    margin-top: 0px;
-    visibility: visible;
-    opacity: 1.0;
-}
+
 
  .img1{
         display: block;
@@ -383,15 +409,11 @@ section{
     margin-bottom: 200px;
     
 }
-.backgroundImage{
-    background-color: rgb(63, 63, 63);
-    background-image: linear-gradient(#3f3f3f,#162f59);
-    border-top: 7px solid black;
-}
+
 .myHeader1{
     padding-top: 100px;
     font-size: 80px;
-    color: rgb(255, 217, 159);
+    color: rgb(0, 0, 0);
     transition: all 1s ease-in;
     opacity: 0%;
 }
@@ -401,30 +423,26 @@ section{
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    border-radius: 30px;
+   
     width:1200px;
     height: auto;
     opacity: 0;
-    transition: all 2.0s ease-in;
+   }
 
-}
-.resumeImg.active{
-opacity: 100%;
-margin-top: 100px;
-}
+
 .myHeader1.active{
  margin-top: 0px;
  opacity: 100%;
 }
 .line1{
-    border-top: solid 3px  rgb(255, 217, 159);
+    border-top: solid 3px  rgb(0, 0, 0);
     margin-left: 100%;
     margin-right: 100%;
     transition: all 1.0s ease-in;
 }
 .line1.active{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .social{
     grid-column: 1 / span 2;
@@ -478,8 +496,8 @@ button{
     display: grid;
     width: 600px;
     height: 600px;
-    align-items: center;
-    justify-content: center;
+    
+   
 }
 .imgList{
     grid-template-columns: auto auto;
@@ -488,24 +506,26 @@ button{
 }
 .imgItem{
     
-   
-    width:200px;
+  
+    width:400px;
     height:auto;
-    margin:10px;
+    margin:5px; 
    transition: all 0.5s;
    background-size: cover;
    background-position: center;
 }
 .imgItem:hover{
 height:auto;
-width:500px;
+width:550px;
 cursor: pointer;
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
 }
 footer{
    align-items: center;
    text-align: center;
     justify-content: center;
-    color: rgb(255, 217, 159);
+    color: rgb(255, 255, 255);
     background-color:rgb(29, 29, 29);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -518,5 +538,20 @@ footer{
    
 }
 .tan{
-    color:#ffd99f;
+    color:#ff3535;
+}
+.work{
+   
+    
+    margin-top: 3%;
+    margin-bottom: 3%;
+   background-color:#f6f6f6;
+   padding-bottom: 5%;
+   
+
+
+}
+.work:active{
+    
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
